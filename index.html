@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>食空大冒险</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <div class="phone-shell">
+      <div id="splash" class="splash is-visible">
+        <video
+          id="splashVideo"
+          class="splash__video"
+          src="./assets/intro/intro-compressed.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          webkit-playsinline
+          preload="auto"
+        ></video>
+      </div>
+
+      <div class="app">
+        <main id="pageContainer" class="page-container"></main>
+
+        <nav id="tabbar" class="tabbar" aria-label="底部导航"></nav>
+
+        <div id="toast" class="toast" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
